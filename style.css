@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+.drop-zone {
+  width: 100%;
+  max-width: 520px;
+  border: 2px dashed blue;
+  border-radius: 12px;
+  padding: 48px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: green 0.2s, background 0.2s;
+  background: pink;
+  position: relative;
+}
+
+.drop-zone.hover {
+  border-color: palevioletred;
+  background: #1e1e24;
+}
