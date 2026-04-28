@@ -4,9 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PIXEL GENERATOR</title>
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="/index.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div><h1 class="">PIXEL GENERATOR</h1></div>
+    <div class="drop-zone" id="dropZone">
+      <input type="file" id="fileInput" accept="image/*" />
+      <p>
+        <strong>Přetáhni obrázek sem</strong> nebo klikni pro výběr<br />
+        <small>JPG, PNG, WEBP · velikost souboru do 5 MB</small>
+      </p>
+    </div>
+    <canvas id="myCanvas" width="800" height="800"></canvas>
   </body>
 </html>
