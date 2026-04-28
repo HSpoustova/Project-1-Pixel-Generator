@@ -8,15 +8,19 @@
     <script type="module" src="/index.js"></script>
   </head>
   <body>
-    <div><h1 class="">PIXEL GENERATOR</h1></div>
-    <div class="drop-zone" id="dropZone">
-      <input type="file" id="fileInput" accept="image/*" />
-      <p>
-        <strong>Add Picture Here</strong> or Choose From Divace.<br />
-        <small>JPG, PNG, WEBP · File up to 5 MB</small>
-      </p>
-      <button class="button" type="button">Pixel It</button>
+    <div class="wrapper">
+      <div><h1 class="">PIXEL GENERATOR</h1></div>
+      <div class="drop-zone" id="dropZone">
+        <input type="file" id="fileInput" accept="image/*" />
+        <p>
+          <strong>Grab the Picture Here</strong> or Choose From Divace.<br />
+          <small>JPG, PNG, WEBP · File up to 5 MB</small>
+        </p>
+      </div>
+      <div class="button">
+        <button id="button_pixel" type="button">Pixel It</button>
+      </div>
+      <canvas id="myCanvas" width="800" height="800"></canvas>
     </div>
-    <canvas id="myCanvas" width="800" height="800"></canvas>
   </body>
 </html>

@@ -13,20 +13,36 @@ body {
   min-height: 100dvh;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .drop-zone {
   width: 100%;
-  max-width: 520px;
-  border: 2px dashed blue;
+  max-width: 50rem;
+  border: 2px dashed gray;
   border-radius: 12px;
   padding: 48px 24px;
   text-align: center;
   cursor: pointer;
-  transition: green 0.2s, background 0.2s;
-  background: pink;
+  background: ghostwhite;
   position: relative;
 }
 
-.drop-zone.hover {
-  border-color: palevioletred;
-  background: #1e1e24;
+.button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#button_pixel {
+  margin: 2rem;
+  padding: 1rem;
+  border: 2px dashed gray;
+  border-radius: 12px;
+  cursor: pointer;
+  background: ghostwhite;
 }
