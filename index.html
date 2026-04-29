@@ -17,8 +17,13 @@
           <small>JPG, PNG, WEBP · File up to 5 MB</small>
         </p>
       </div>
-      <div class="button">
-        <button id="button_pixel" type="submit">Pixel It</button>
+      <div class="control">
+        <div class="scale">
+          <p id="scale_p">Scale</p>
+          <input type="range" id="pixelSlider" min="1" max="50" value="25" />
+        </div>
+
+        <button id="button_clear" type="submit">Clear it</button>
       </div>
       <canvas id="myCanvas" width="800" height="800"></canvas>
     </div>

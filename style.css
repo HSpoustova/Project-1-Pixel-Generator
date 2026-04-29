@@ -41,13 +41,27 @@ body {
   height: 100%;
 }
 
-.button {
+.control {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 50rem;
 }
 
-#button_pixel {
+.scale {
+  display: flex;
+  flex-direction: row;
+}
+
+#scale_p {
+  padding: 1rem;
+
+
+}
+
+#button_clear {
   margin: 2rem;
   padding: 1rem;
   border: 2px dashed gray;
@@ -59,4 +73,5 @@ body {
 canvas {
   width: 800px;
   height: 800px;
+  max-width: 100%;
 }
