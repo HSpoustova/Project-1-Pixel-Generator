@@ -3,10 +3,14 @@
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 body {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,12 +64,21 @@ body {
 }
 
 #button_clear {
-  margin: 2rem;
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem;
   padding: 1rem;
-  border: 2px dashed gray;
+  border: none;
+  border-bottom: 10px rgb(176, 176, 176);
   border-radius: 12px;
   cursor: pointer;
   background: ghostwhite;
+  transition-duration: 0.4s
+}
+
+#button_clear:hover {
+
+  background-color: rgb(67, 223, 158);
 }
 
 canvas {

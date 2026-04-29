@@ -4,7 +4,7 @@ const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 const button_clear = document.getElementById('button_clear');
 const pixelSlider = document.getElementById('pixelSlider');
-const blockSize = 51 - pixelSlider.value;
+const blockSize = Math.round(pixelSlider.value / 2);
 let lastImg = null;
 let offsetX, offsetY, newW, newH; //undefined, but I fill it in onload function
 
@@ -95,7 +95,7 @@ button_clear.addEventListener('click', () => {
 pixelSlider.addEventListener('input', () => {
   if (!lastImg) return;
 
-  const blockSize = 51 - pixelSlider.value;
+  const blockSize = Math.round(pixelSlider.value / 2);
 
   ctx.drawImage(lastImg, offsetX, offsetY, newW, newH);
   applyPixelate(blockSize);
